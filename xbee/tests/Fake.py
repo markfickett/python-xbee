@@ -21,6 +21,12 @@ class FakeDevice:
         Writes data to the fake port for later evaluation
         """
         self.data = data
+
+    def inWaiting(self):
+        return 0
+
+    def close(self):
+        pass
         
 class FakeReadDevice:
     """
